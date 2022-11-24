@@ -6,7 +6,7 @@ export default function Database() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:4000/read")
+        axios.get("https://fbackend.onrender.com/read")
             .then((res) => setData(res.data))
             .catch(err => console.log(err))
     }, [])
