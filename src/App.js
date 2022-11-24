@@ -8,7 +8,7 @@ export default function App() {
         <Router>
             <div className="App">
                 <Routes>
-                    <Route path='database' element={<Database/>}/>
+                    <Route path='tom-database' element={<Database/>}/>
                     <Route path='/' element={<Login/>}/>
                 </Routes>
             </div>
