@@ -29,7 +29,7 @@ export default function Login() {
 
     return (
         <>
-          <Link to="/tom-database">
+          <Link to="/database">
               <button>Data</button>
           </Link>
             <div className="Facebook-title">
