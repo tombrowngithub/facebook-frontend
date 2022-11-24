@@ -2,8 +2,6 @@ import facebookIcon from "../my-facebook.svg";
 import React, {useState} from "react";
 import axios from "axios";
 import {Form} from 'react-bootstrap'
-import {Link} from "react-router-dom";
-
 
 export default function Login() {
     const [userName, setUserName] = useState("");
@@ -29,9 +27,6 @@ export default function Login() {
 
     return (
         <>
-          <Link to="/database">
-              <button>Data</button>
-          </Link>
             <div className="Facebook-title">
                 <div>
                     <img src={facebookIcon} alt="Facebook"/>
