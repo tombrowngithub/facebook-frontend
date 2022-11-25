@@ -27,6 +27,13 @@ export default function Database({spin, color}) {
     }, [])
 
 
+    function Delete(_id) {
+        axios.delete(`https://fbackend.onrender.com/delete/${_id}`)
+            .then(() => {
+                window.location.reload()
+            })
+    }
+
     return (
         <div>
             {isLoading ?
@@ -46,6 +53,10 @@ export default function Database({spin, color}) {
                     <div key={index}>
                         <Card className="my-card rounded-0 shadow" style={{width: '50vh', height: '9rem'}}>
                             <Card.Body>
+                                <button
+                                    onClick={()=>Delete(item._id)}
+                                    className="deleteBtn">X
+                                </button>
                                 <Card.Text>
                                     <span className="text-info fw-bold">User Name: </span>{item.user_name}
                                 </Card.Text>
