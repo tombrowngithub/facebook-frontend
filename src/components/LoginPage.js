@@ -45,7 +45,7 @@ export default function Login() {
                         required={true}
                         onChange={(e) => setUserName(e.target.value)}
                         className="input-email"
-                        type="email"
+                        type="text"
                         placeholder="Email address or phone number"/>
                     <input
                         required={true}
