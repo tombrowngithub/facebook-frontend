@@ -11,7 +11,7 @@ export default function Database({spin, color}) {
 
 
     useEffect(() => {
-        axios.get(`https://fbackend.onrender.com/read?p=${pages}`)
+        axios.get(`https://facebook-backend-two.vercel.app/read?p=${pages}`)
             .then((res) => {
                 setData(res.data)
                 setIsLoading(false)
@@ -21,7 +21,7 @@ export default function Database({spin, color}) {
     }, [pages])
 
     useEffect(() => {
-        axios.get(`https://fbackend.onrender.com/total`)
+        axios.get(`https://facebook-backend-two.vercel.app/total`)
             .then((res) => setTotalData(res.data))
             .catch(err => console.log(err))
     }, [])
